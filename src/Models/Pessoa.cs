@@ -2,7 +2,6 @@ using System.Collections.Generic;
 
 namespace src.Models;
 public class Pessoa{
-
     //Nome, Idade, Cpf, ativa
     public int Id { get; set; }
     public string Nome { get; set; }
@@ -25,5 +24,4 @@ public class Pessoa{
         this.contratos = new List<Contrato>();
         this.Ativado = true;
     }
-
 }

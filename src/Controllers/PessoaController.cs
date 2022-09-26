@@ -11,7 +11,6 @@ namespace src.Controllers;
 [Route("[controller]")]
 
 public class PessoaController : ControllerBase{
-
     private DatabaseContext _context { get; set; }
 
     public PessoaController(DatabaseContext context)
@@ -43,7 +42,6 @@ public class PessoaController : ControllerBase{
             
             return BadRequest();
         }
-
         
         return Created("criado", pessoa);
     }
@@ -104,6 +102,4 @@ public class PessoaController : ControllerBase{
             status = HttpStatusCode.OK
         });
     }
-
-
 }

@@ -20,5 +20,4 @@ public class Contrato{
         this.Valor = Valor;
         this.pago = false;
     }
-
 }
